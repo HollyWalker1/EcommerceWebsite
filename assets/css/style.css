@@ -178,3 +178,13 @@ button:hover{
     transform: translateY(0px);
     opacity:1;
 }
+
+.star{
+    padding: 10px 0;
+
+}
+
+.star i{
+    font-size: 0.9rem;
+    color: rgb(248, 212, 122);
+}
