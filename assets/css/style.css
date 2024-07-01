@@ -285,3 +285,13 @@ footer .copyright img{
 #featured2{
     margin-top: 75px;
 }
+
+.sm-img-grp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sm-img-col{
+    flex-basis: 25%;
+    cursor: pointer;
+}
