@@ -266,3 +266,18 @@ footer p{
 footer h6{
     color:rgb(97, 97, 116);
 }
+
+footer .copyright img{
+    width: 60%;
+}
+
+.logo{
+    width:40px;
+    height:40px;
+}
+
+.navbar .brand-name{
+    color: rgb(127, 193, 218);
+    margin-right: 5px;
+    text-shadow: 2px 2px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
