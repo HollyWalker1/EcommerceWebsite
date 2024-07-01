@@ -40,7 +40,7 @@ h5{
 }
 
 h6{
-    color:#D8D8D8;
+    color:rgb(146, 149, 202);;
 }
 
 button{
@@ -282,9 +282,13 @@ footer .copyright img{
     text-shadow: 2px 2px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
 
+/* shop.html */
+
 #featured2{
     margin-top: 75px;
 }
+
+/* single product */
 
 .sm-img-grp{
     display: flex;
@@ -294,4 +298,21 @@ footer .copyright img{
 .sm-img-col{
     flex-basis: 25%;
     cursor: pointer;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.single-product input:focus{
+    outline:none;
+}
+
+.single-product .add-to-cart{
+    opacity: 1;
+    transition: 0.4s all;
 }
