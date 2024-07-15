@@ -316,3 +316,38 @@ footer .copyright img{
     opacity: 1;
     transition: 0.4s all;
 }
+
+/* Cart */
+
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart .product-info{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.cart th{
+    text-align: left;
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(189, 224, 235);
+}
+
+.cart .split{
+    background-color: white;
+    color: rgb(65, 86, 94);
+}
+
+.cart td{
+    padding: 10px 20px;
+
+}
+
+.cart td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
