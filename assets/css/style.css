@@ -56,6 +56,7 @@ button{
     transition: 0.4s ease;
 }
 
+
 button:hover{
     background-color:rgb(255, 255, 255);
 }
@@ -405,4 +406,30 @@ th:last-child{
 .checkout-container{
     display: flex;
     justify-content: flex-end;
+}
+
+/* Login */
+
+#login-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgb(146, 149, 202);
+}
+
+#login-form input{
+    margin: 5px auto;
+}
+
+#login-form #login-button{
+    width: 100%;
+    background-color: rgb(146, 149, 202);
+    color: white;
+    border: none;
+    padding: 2px 0px;
+}
+
+#login-form #register-url{
+    color: rgb(66, 67, 101);
 }
