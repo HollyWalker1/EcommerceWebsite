@@ -459,3 +459,38 @@ th:last-child{
 #register-form #login-url{
     color: rgb(66, 67, 101);
 }
+
+/* Account */
+
+.break hr{
+    width: 50%;
+}
+
+#account-form{
+    width: 50%;
+    margin: 35px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#account-form .button{
+    width: 100%;
+    background-color: rgb(146, 149, 202);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 2px 0px;
+}
+
+#account-form #change-password-button{
+    color: rgb(255, 255, 255);
+}
+
+#account-from input{
+    margin: 5px auto;
+}
+
+.account-info #orders-button, #logout-button{
+    color: rgb(146, 149, 202);
+    text-decoration: none;
+}
