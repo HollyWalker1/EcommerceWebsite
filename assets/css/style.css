@@ -561,3 +561,10 @@ th:last-child{
 #checkout-form label{
     text-align: left;
 }
+
+/* Contact */
+
+#contact span{
+    color: rgb(146, 149, 202);
+    
+}
