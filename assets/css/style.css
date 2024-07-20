@@ -527,3 +527,37 @@ th:last-child{
     height: 80px;
     margin-right: 10px;
 }
+
+/* Checkout */ 
+
+#checkout-form{
+    text-align: center;
+}
+
+#checkout-form .checkout-small-element, #checkout-form .checkout-large-element{
+    text-align: left;
+    display: inline-block;
+    width: 40%;
+    margin: 10px auto;
+}
+
+#checkout-form .checkout-large-element{
+    width: 81%;
+}
+
+#checkout-form .checkout-button-container{
+    margin: 10px;
+    text-align: center;
+    
+}
+
+#checkout-form #checkout-button{
+    background-color: rgb(146, 149, 202);
+    color: white;
+    border: none;
+    padding: 2px 25px;
+}
+
+#checkout-form label{
+    text-align: left;
+}
