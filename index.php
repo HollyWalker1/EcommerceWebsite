@@ -293,8 +293,11 @@
       </div>
     </div>  
       <div class="row mx-auto container-fluid">
+      <?php include("server/get_drawing.php");?>
+
+      <?php while($row=$drawing->fetch_assoc()){ ?>
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/imgs/drawing1.jpg"/>
+          <img class="img-fluid mb-3" src="assets/imgs/<?php echo $row["product_image"]; ?>"/>
 
           <div class="star">
             <i class="fas fa-star"></i>
@@ -303,55 +306,13 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <h5 class="p-name">12 Pack Prismacolor pencils</h5>
-          <h4 class="p-price">£19.99</h4>
+          <h5 class="p-name"><?php echo $row["product_name"]; ?></h5>
+          <h4 class="p-price">£<?php echo $row["product_price"]; ?></h4>
           <button class="add-to-cart">Add to Cart</button>
         </div>
 
-        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/imgs/drawing2.jpg"/>
+        <?php } ?>
 
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">STATIONARY ISLAND A5 Sketch Book</h5>
-          <h4 class="p-price">£9.99</h4>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/imgs/drawing3.jpg"/>
-
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">72pc Copic Professional Marker Set</h5>
-          <h4 class="p-price">£250.00</h4>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/imgs/drawing4.jpg"/>
-
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">8pc POSCA Paint Pens</h5>
-          <h4 class="p-price">£18.99</h4>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
       </div>
     </div>
   </section>
