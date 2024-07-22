@@ -151,8 +151,11 @@
       </div>
     </div>  
       <div class="row mx-auto container-fluid">
+      <?php include("server/get_paint.php");?>
+
+      <?php while($row=$paint->fetch_assoc()){ ?>
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/imgs/paint1.jpg"/>
+          <img class="img-fluid mb-3" src="assets/imgs/<?php echo $row["product_image"]; ?>"/>
 
           <div class="star">
             <i class="fas fa-star"></i>
@@ -161,55 +164,11 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <h5 class="p-name">100 Colours Artecho Watercolour Set</h5>
-          <h4 class="p-price">£20.00</h4>
+          <h5 class="p-name"><?php echo $row["product_name"]; ?></h5>
+          <h4 class="p-price">£<?php echo $row["product_price"]; ?></h4>
           <button class="add-to-cart">Add to Cart</button>
         </div>
-
-        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/imgs/paint2.jpg"/>
-
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">23pc Professional Paintbrush Set</h5>
-          <h4 class="p-price">£12.00</h4>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/imgs/paint3.jpg"/>
-
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">48pc Castle Acrylic Paint Set</h5>
-          <h4 class="p-price">£32.00</h4>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/imgs/paint4.jpg"/>
-
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">5x A4 Stretched Canvas Boards</h5>
-          <h4 class="p-price">£15.00</h4>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
+        <?php }?>
       </div>
     </div>
   </section>
@@ -222,8 +181,11 @@
       </div>
     </div>  
       <div class="row mx-auto container-fluid">
+      <?php include("server/get_kcs.php");?>
+
+      <?php while($row=$kcs->fetch_assoc()){ ?>
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/imgs/kcs1.jpg"/>
+          <img class="img-fluid mb-3" src="assets/imgs/<?php echo $row["product_image"]; ?>"/>
 
           <div class="star">
             <i class="fas fa-star"></i>
@@ -232,55 +194,12 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <h5 class="p-name">56pc Knitting Toolkit</h5>
-          <h4 class="p-price">£14.99</h4>
+          <h5 class="p-name"><?php echo $row["product_name"]; ?></h5>
+          <h4 class="p-price">£<?php echo $row["product_price"]; ?></h4>
           <button class="add-to-cart">Add to Cart</button>
         </div>
 
-        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/imgs/kcs2.jpg"/>
-
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Beginner Crochet Kit</h5>
-          <h4 class="p-price">£15.10</h4>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/imgs/kcs3.jpg"/>
-
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">New Look N6692 Sewing Pattern</h5>
-          <h4 class="p-price">£9.99</h4>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-
-        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/imgs/kcs4.jpg"/>
-
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Beginner Knitting Kit</h5>
-          <h4 class="p-price">£19.99</h4>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
+        <?php } ?>
       </div>
     </div>
   </section>
